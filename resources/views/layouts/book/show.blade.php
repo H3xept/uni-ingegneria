@@ -56,11 +56,15 @@
 
 	    <div class="input-group" style="padding-top:8px;">
 	    <div class="input-group-addon">Stato</div>
-	    @if($book->kStatus == "kStatusGood")
-	    <?php $status = "Buono"; ?>
-	    @else
-	    <?php $status = "Usurato"; ?>
-	    @endif
+		    @if($book->kStatus == "kStatusNew")
+		    <?php $status = "Nuovo"; ?>
+		    @elseif($book->kStatus == "kStatusGood")
+		    <?php $status = "Buono" ?>
+		    @elseif($book->kStatus == "kStatusBad")
+		    <?php $status = "Usurato"; ?>
+		    @else
+		    <?php $status = "Errore." ?>
+		    @endif
 	        <input value="{{$status}}" class="form-control" style="background-color:white;" readonly>
 	    </div>
 

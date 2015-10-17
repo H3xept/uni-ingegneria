@@ -18,10 +18,12 @@
 
 		    @if($kStatus == "kStatusNew")
 		    <?php $status = "Nuovo"; ?>
-		    @elseif($kStatus == "kStatusMedium")
+		    @elseif($kStatus == "kStatusGood")
 		    <?php $status = "Buono" ?>
-		    @else
+		    @elseif($kStatus == "kStatusBad")
 		    <?php $status = "Usurato"; ?>
+		    @else
+		    <?php $status = "Errore." ?>
 		    @endif
 
 			<label style="margin-top:16px;"><span class="uni-label" style="margin-right:2px;"> {{ $status }} </span> <span class="uni-label" style="margin-right:2px;">$ {{ $price }} </span></label>

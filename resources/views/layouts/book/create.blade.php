@@ -31,7 +31,7 @@
 		</div>
 		<div class="radio-inline">
 		  <label>
-		    <input type="radio" name="kStatus" id="kStatusGood" value="kStatusGood">
+		    <input type="radio" name="kStatus" id="kStatusNew" value="kStatusNew">
 		    Buono stato
 		  </label>
 		</div>

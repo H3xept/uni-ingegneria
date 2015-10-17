@@ -18,10 +18,9 @@ class CreateBooksTable extends Migration
             $table->string('name');
             $table->longText('authors');
             $table->string('product_code');
-            $table->enum('kStatus',['kStatusGood','kStatusMedium','kStatusBad']);
+            $table->enum('kStatus',['kStatusNew','kStatusGood','kStatusBad']);
             $table->longText('description');
             $table->double('price');
-            $table->enum('kRetMode',['kRetModeHand','kRetModeShip']);
             $table->timestamps();
             //$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
