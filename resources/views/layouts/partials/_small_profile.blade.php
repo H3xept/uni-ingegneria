@@ -4,7 +4,7 @@
 
 		<div class="row">
 			<div class="col-xs-3" style="max-width:128px; min-width:64px;">
-				<img src="https://avatars2.githubusercontent.com/u/3898310?v=3&s=460" class="img-responsive">
+				<img src="https://avatars1.githubusercontent.com/u/2883651?v=3&s=140" class="img-responsive">
 			</div>
 			<div class="col-xs-9">
 				<div class="uni-title" style="font-size:16px;">Leonardo Cascianelli </div>
