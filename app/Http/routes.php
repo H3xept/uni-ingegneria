@@ -15,11 +15,12 @@ Route::get('/', ['as'=>'book.index','uses'=>'BookshelfController@index']);
 
 Route::get('/home', ['as'=>'book.index','uses'=>'BookshelfController@index']);
 
-Route::post('/book/create', ['as'=>'book.create','uses'=>'BookshelfController@store']);
+Route::get('/book/create', ['as'=>'book.create','uses'=>'BookshelfController@create']);
+Route::post('/book/create', ['as'=>'book.store','uses'=>'BookshelfController@store']);
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
-Route::post('auth/login', ['as'=>'auth.postLogin','uses','Auth\AuthController@postLogin']);
+Route::post('auth/login', ['as'=>'auth.postLogin','uses'=>'Auth\AuthController@postLogin']);
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 // Registration routes...

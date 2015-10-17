@@ -21,7 +21,7 @@
   <div align="center">
     <ul class="list row-fluid" style="list-style-type:none; padding:0px; margin:0px;">
       @foreach($books as $book)
-      <li class="col-md-4 col-xs-6">
+      <li class="col-md-12">
         {!! view('layouts.partials._book',$book)!!}
       </li>
       @endforeach

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Book;
+use App\User;
+use Auth;
 
 class BookshelfController extends Controller
 {
@@ -27,7 +29,7 @@ class BookshelfController extends Controller
      */
     public function create()
     {
-        //
+        return view('layouts.book.create');
     }
 
     /**
@@ -45,9 +47,9 @@ class BookshelfController extends Controller
         $book->authors = $request->authors;
         $book->description = $request->description;
         $book->price = $request->price;
-        $book->kRetMode = $request->kRetMode;
+        $book->user_id = Auth::user()->id;
         $book->save();
-        return $book;
+        return redirect()->route('book.index');
     }
 
     /**
@@ -58,7 +60,7 @@ class BookshelfController extends Controller
      */
     public function show($id)
     {
-        $book = Book::findOrFail($id)->first();
+        $book = Book::findOrFail($id);
         return view('layouts.book.show')->with('book',$book);
     }
 

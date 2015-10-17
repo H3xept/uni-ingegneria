@@ -3,17 +3,17 @@
 
 <div class="row-fluid">
 
-	<div class="col-md-5">
+	<div class="col-md-5 col-sm-5 col-xs-12">
 
 	<!-- TEMP STATIC IMAGE -->
 
-		<img src="{{asset('https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg')}}" class="img-responsive img-thumbnail" alt="Responsive image" style="max-height:360px">
+		<img src="{{asset('http://bit.ly/1LsJbGJ')}}" class="img-responsive img-thumbnail" alt="Responsive image" style="max-height:360px">
 	
 	<!-- ## -->
 
 	</div>
 
-	<div class="col-md-7">
+	<div class="col-md-7 col-sm-7 col-xs-12">
 	    
 	    <div class="uni-title">{{$book->name}}</div>
 		<address class="uni-form">
@@ -52,7 +52,7 @@
 </div>
 
 <div class="row-fluid">
-	<div class="col-md-5" style="padding-bottom:8px;">
+	<div class="col-md-4 col-sm-12 col-xs-12" style="padding-bottom:8px;">
 
 	    <div class="input-group" style="padding-top:8px;">
 	    <div class="input-group-addon">Stato</div>
@@ -65,7 +65,7 @@
 	    </div>
 
 	</div>
-	<div class="col-md-7" style="padding-bottom:8px;">
+	<div class="col-md-8 col-sm-12 col-xs-12" style="padding-bottom:8px;">
 	    <div class="input-group" style="padding-top:8px;">
 	    <div class="input-group-addon">Codice Libro</div>
 	    @if($book->product_code == "")
@@ -92,9 +92,5 @@
 @endsection
 
 @section('login-user')
-
-<div class="row-fluid">
-
-</div>
 
 @endsection

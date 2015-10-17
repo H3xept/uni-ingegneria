@@ -24,6 +24,14 @@ p
 	background-color: #E4E1D5;
 }
 
+.uni-textbox
+{
+	border-color: #E4E1D5;
+	border-width: 1px;
+	background-color: #E4E1D5;
+	margin-bottom:4px;
+}
+
 .uni-subsearch
 {
 	border-width: 0px;
@@ -120,8 +128,16 @@ display: block;
 	border-color: #C9C4B0;
 }
 
-.form-control:focus{
+.form-control:focus
+{
     border-color: #C9C4B0;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+.truncate
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
