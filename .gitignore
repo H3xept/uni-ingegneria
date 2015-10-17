@@ -1,0 +1,7 @@
+# editor
+.idea
+*.iml
+# composer
+auth.json
+# mac
+.DS_Store
