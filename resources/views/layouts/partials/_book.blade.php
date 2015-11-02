@@ -16,28 +16,18 @@
 		<div class="row-fluid">
 			<div class="uni-subtitle description truncate" style="font-size:14px;" align="left">{{ $description }}</div>
 		</div>
-		<!-- OLD SHIT
-		<div class="row-fluid">
-		    @if($kStatus == "kStatusNew")
-		    <?php $status = "Nuovo"; ?>
-		    @elseif($kStatus == "kStatusGood")
-		    <?php $status = "Buono stato" ?>
-		    @elseif($kStatus == "kStatusBad")
-		    <?php $status = "Usurato"; ?>
-		    @else
-		    <?php $status = "Errore." ?>
-		    @endif
-
-			<label class="pull-right" style="margin-top:56px; margin-right:2px;">
-			<span class="uni-label" style="margin-right:2px;"> {{ $status }} </span> 
-			<span class="uni-label price" style="margin-right:2px;">$ {{ $price }} </span>
-			</label>
-		</div>
-		-->
 	</div>
-	<!-- NEW SHIT -->
 	</div>
-      <label class="pull-right" style="margin-bottom:2px; margin-right:2px;">
+	    @if($kStatus == "kStatusNew")
+	    <?php $status = "Nuovo"; ?>
+	    @elseif($kStatus == "kStatusGood")
+	    <?php $status = "Buono stato" ?>
+	    @elseif($kStatus == "kStatusBad")
+	    <?php $status = "Usurato"; ?>
+	    @else
+	    <?php $status = "Errore." ?>
+	    @endif
+      <label class="bot-right" style=" margin-bottom:10px; margin-right:30px;">
       <span class="uni-label" style="margin-right:2px;"> {{ $status }} </span> 
       <span class="uni-label price" style="margin-right:2px;">$ {{ $price }} </span>
       </label>
