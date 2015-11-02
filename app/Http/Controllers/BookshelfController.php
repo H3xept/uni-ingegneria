@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Book;
 use App\User;
 use Auth;
+use Storage;
 
 class BookshelfController extends Controller
 {

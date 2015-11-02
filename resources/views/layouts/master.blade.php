@@ -24,8 +24,8 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">Profile</a></li>
+            <li><a href="#"><i id="home_btn" class="fa fa-home "> Home </i></a></li>
+            <li><a href="#about"><i  id="user_btn"class="fa fa-user "> Profilo</i></a></li>
           </ul>
         </div>
         </div>

@@ -14,12 +14,12 @@
       </div>
   </div>
 
-<div class="row-fluid" style="padding-top:36px;" style="background-color:red;">
+<div class="row-fluid" style="padding-top:36px;" style="">
 
   
 
   <div align="center">
-    <ul class="list row-fluid" style="list-style-type:none; padding:0px; margin:0px;">
+    <ul class="list row-fluid" style="list-style-type:none; padding:0px;">
       @foreach($books as $book)
       <li class="col-md-12">
         {!! view('layouts.partials._book',$book)!!}

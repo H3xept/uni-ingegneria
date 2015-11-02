@@ -135,6 +135,22 @@ display: block;
     box-shadow: none;
 }
 
+#home_btn
+{
+	color: #7A7139;
+}
+#user_btn
+{
+	color: #7A7139;
+}
+
+.bot-right
+{
+   position:absolute;
+   bottom:0;
+   right:0;
+}
+
 .truncate
 {
     overflow: hidden;

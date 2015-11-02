@@ -17,7 +17,8 @@ Route::get('/home', ['as'=>'book.index','uses'=>'BookshelfController@index']);
 
 Route::get('/book/create', ['as'=>'book.create','uses'=>'BookshelfController@create']);
 Route::post('/book/create', ['as'=>'book.store','uses'=>'BookshelfController@store']);
-
+Route::get('/user/edit',['as'=>'user.edit','uses'=>'UserController@edit']);
+Route::post('/user/edit',['as'=>'user.update','uses'=>'UserController@update']);
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', ['as'=>'auth.postLogin','uses'=>'Auth\AuthController@postLogin']);

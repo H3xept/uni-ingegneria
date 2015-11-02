@@ -16,7 +16,7 @@
 				<button class="uni-button " onclick="location.href = '/book/create';"><i class="fa fa-plus" style=""></i></button>
 			</div>
 			<div class="col-xs-1">
-				<button class="uni-button "><i class="fa fa-cog" style=""></i></button>
+				<button class="uni-button " onclick="location.href = '/user/edit';"><i class="fa fa-cog" style=""></i></button>
 			</div>
 			<div class="col-xs-1">
 				<button class="uni-button" onclick="location.href = '/auth/logout';"><i class="fa fa-sign-out" style=""></i></button>
